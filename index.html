@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <textarea name="get" id="getText"></textarea>
+    <input type="number" id="num">
+    <button
+        onclick="cipher(document.getElementById('num').value, document.getElementById('getText').value)">зашифровать</button>
+    <button
+        onclick="unCipher(document.getElementById('num').value, document.getElementById('getText').value)">расшифровать</button>
+
+    <textarea name="" id="result"></textarea>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
