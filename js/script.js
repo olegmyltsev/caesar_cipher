@@ -30,7 +30,6 @@ function cipher(key, text) {
             result += code[abc.indexOf(sourceText[count])]
         }
     }
-
     document.getElementById("result").innerHTML = result
 }
 

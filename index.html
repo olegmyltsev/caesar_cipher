@@ -10,14 +10,54 @@
 </head>
 
 <body>
-    <textarea name="get" id="getText"></textarea>
-    <input type="number" id="num">
-    <button
-        onclick="cipher(document.getElementById('num').value, document.getElementById('getText').value)">зашифровать</button>
-    <button
-        onclick="unCipher(document.getElementById('num').value, document.getElementById('getText').value)">расшифровать</button>
+    <header class="header">Шифр цезаря</header>
+    <textarea class="get-text" id="getText"></textarea>
 
-    <textarea name="" id="result"></textarea>
+
+
+    <div class="buttons">
+        <select class="numbers" name="numbers" id="get-number">
+            <option class="number" id="1">1</option>
+            <option class="number" id="2">2</option>
+            <option class="number" id="3">3</option>
+            <option class="number" id="4">4</option>
+            <option class="number" id="5">5</option>
+            <option class="number" id="6">6</option>
+            <option class="number" id="7">7</option>
+            <option class="number" id="8">8</option>
+            <option class="number" id="9">9</option>
+            <option class="number" id="10">10</option>
+            <option class="number" id="11">11</option>
+            <option class="number" id="12">12</option>
+            <option class="number" id="13">13</option>
+            <option class="number" id="14">14</option>
+            <option class="number" id="15">15</option>
+            <option class="number" id="16">16</option>
+            <option class="number" id="17">17</option>
+            <option class="number" id="18">18</option>
+            <option class="number" id="19">19</option>
+            <option class="number" id="20">20</option>
+            <option class="number" id="21">21</option>
+            <option class="number" id="22">22</option>
+            <option class="number" id="23">23</option>
+            <option class="number" id="24">24</option>
+            <option class="number" id="25">25</option>
+            <option class="number" id="26">26</option>
+            <option class="number" id="27">27</option>
+            <option class="number" id="28">28</option>
+            <option class="number" id="29">29</option>
+            <option class="number" id="30">30</option>
+            <option class="number" id="31">31</option>
+            <option class="number" id="32">32</option>
+            <option class="number" id="33">33</option>
+        </select>
+        <button class="button cipher"
+            onclick="cipher(document.getElementById('get-number').value, document.getElementById('getText').value)">зашифровать</button>
+        <button class="button uncipher"
+            onclick="unCipher(document.getElementById('get-number').value, document.getElementById('getText').value)">расшифровать</button>
+    </div>
+    
+    <div class="result" id="result"></div>
 
     <script src="js/script.js"></script>
 </body>

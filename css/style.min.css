@@ -1,1 +1,1 @@
-#getText{width:100%}
+*{outline:none}header{font-size:50px;text-align:center}.get-text{width:500px;height:300px;display:block;margin:10px auto 10px auto;resize:none;border-radius:0;outline:none;border:solid #000 2px;font-size:50px}.buttons{display:flex;justify-content:center}.numbers{text-align:center;font-size:30px;width:200px;border:solid #e50b0b 5px;display:block}.button{display:block;height:50px;width:200px;margin-left:10px}.result{text-align:center;display:block;width:1000px;margin:10px auto;font-size:30px;border:solid red 5px}
