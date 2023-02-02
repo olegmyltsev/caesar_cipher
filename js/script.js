@@ -25,7 +25,7 @@ function cipher(key, text) {
             code.push(code.shift())
         }
         if (sourceText[count] == ' ') {
-            result += '&'
+            result += '%'
         } else {
             result += code[abc.indexOf(sourceText[count])]
         }
@@ -53,7 +53,7 @@ function unCipher(key, text) {
         for (let index = 0; index < key; index++) {
             code.push(code.shift())
         }
-        if (sourceText[count] == '&') {
+        if (sourceText[count] == '%') {
             result += ' '
         } else {
             result += abc[code.indexOf(sourceText[count])]
